@@ -1,0 +1,35 @@
+<div>
+  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark py-3 px-lg-5 px-md-5 blue-grey darken-4 fixed-top fixed-margin-btm"
+  [containerInside]="false">
+    <!-- Navbar brand -->
+    <mdb-navbar-brand>
+      <a class="navbar-brand font-25px pl-lg-4" [routerLink]="'/'">StLagrange</a>
+    </mdb-navbar-brand>
+
+    <links>
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto text-uppercase">
+        <li class="nav-item login-btn">
+          <a
+            class="nav-link waves-light text-dark"
+            mdbWavesEffect
+            [routerLink]="'/login'"
+          >
+            Login
+          </a>
+        </li>
+        <li class="nav-item signup-btn">
+          <a
+            class="nav-link waves-light text-white"
+            mdbWavesEffect
+            [routerLink]="'/signup'"
+          >
+            Signup
+          </a>
+          <!-- <a class="nav-link waves-light text-white" mdbWavesEffect [routerLink]="'/sign-up'"><mdb-icon fas icon="cog"></mdb-icon> Signup </a> -->
+        </li>
+      </ul>
+      <!-- Links -->
+    </links>
+  </mdb-navbar>
+</div>
