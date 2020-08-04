@@ -9,6 +9,13 @@ export const appRoutesLazyLoad: Routes = [
       { path: '', component: LandingComponent },
       { path: 'home', component: LandingComponent },
       {
+        path: '',
+        loadChildren: () =>
+          import('../landing/landing.module').then(
+            (m) => m.LandingModule
+          )
+      },
+      {
         path: 'catalog',
         loadChildren: () =>
           import('../catalog/catalog.module').then(

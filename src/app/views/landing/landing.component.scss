@@ -1,0 +1,142 @@
+.mainDiv {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 150px;
+}
+
+.mainDiv, .secondDiv, .thirdDiv, .fourthDiv {
+  padding-bottom: 20px;
+}
+
+.fourthDiv {
+  padding-bottom: 80px;
+}
+
+.mainDivWriteUp {
+  margin-top: 100px;
+}
+
+.createDiv {
+  width: 90%;
+  padding-right: 5px;
+  line-height: 1.2;
+}
+
+.create {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.simpleDiv {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+}
+
+.simple {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.startDiv {
+  padding-top: 20px;
+}
+
+.selling {
+  background-color: rgb(95, 16, 16);
+  color: white;
+  border-radius: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  width: 43%;
+  font-size: 14px;
+}
+
+.mainImg {
+  width: 550px;
+  height: 550px;
+}
+
+.secondRow {
+  padding-top: 30px;
+}
+
+.midFeatures {
+  font-size: 20px;
+}
+
+.iconStyle {
+  font-size: 40px;
+}
+
+.iconDiv {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.writeDiv {
+  margin-bottom: 20px;
+}
+
+.thirdRow {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.thirdWrite, .fourthWrite {
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+}
+
+.thirdWriteTwo {
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 17px;
+}
+
+.thirdImg {
+  width: 220px;
+  height: 220px;
+  padding: 8px;
+}
+
+.thirdBtn {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.thirdBtnAll {
+  border: 1px solid rgb(163, 163, 163);
+  margin-left: 500px;
+  margin-right: 500px;
+  border-radius: 3px;
+
+}
+
+.allProd {
+  padding-top: 10px;
+}
+
+.imgWriteOne {
+  padding: 8px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.imgWriteTwo {
+  padding: 8px;
+  color: grey;
+}
+
+.fourthWrite {
+  margin-bottom: 40px;
+}

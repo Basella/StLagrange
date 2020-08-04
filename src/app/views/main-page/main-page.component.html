@@ -1,35 +1,141 @@
 <div>
-  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark py-3 px-lg-5 px-md-5 blue-grey darken-4 fixed-top fixed-margin-btm"
-  [containerInside]="false">
+  <mdb-navbar SideClass="navbar navbar-expand-lg py-3 px-lg-5 px-md-5 darken-4 fixed-top fixed-margin-btm">
     <!-- Navbar brand -->
     <mdb-navbar-brand>
-      <a class="navbar-brand font-25px pl-lg-4" [routerLink]="'/'">StLagrange</a>
+      <img src="../../../assets/Images/stlagrange_logo.jpg" class="navbar-brand">
+      <a class="navbar-brand brandNav" [routerLink]="'/'">StLagrange</a>
     </mdb-navbar-brand>
 
-    <links>
+    <links class="infor">
+      <ul class="navbar-nav inforUL">
+        <li class="nav-item inforWrite"><a>Catalog</a></li>
+        <li class="nav-item inforWrite"><a>How it works</a></li>
+        <li class="nav-item"><a>Price</a></li>
+      </ul>
+    </links>
+
+    <links class="">
       <!-- Links -->
-      <ul class="navbar-nav ml-auto text-uppercase">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item login-btn">
-          <a
-            class="nav-link waves-light text-dark"
-            mdbWavesEffect
-            [routerLink]="'/login'"
-          >
+          <button class="nav-link waves-light text-dark" mdbWavesEffect [routerLink]="'/login'">
             Login
-          </a>
+          </button>
         </li>
-        <li class="nav-item signup-btn">
-          <a
-            class="nav-link waves-light text-white"
-            mdbWavesEffect
-            [routerLink]="'/signup'"
-          >
+        <li class="nav-item signup-link">
+          <button class="nav-link waves-light text-white signup-btn" mdbWavesEffect [routerLink]="'/signup'">
             Signup
-          </a>
-          <!-- <a class="nav-link waves-light text-white" mdbWavesEffect [routerLink]="'/sign-up'"><mdb-icon fas icon="cog"></mdb-icon> Signup </a> -->
+          </button>
         </li>
       </ul>
       <!-- Links -->
     </links>
   </mdb-navbar>
+</div>
+
+<router-outlet></router-outlet>
+
+<div class="footer-fix-btm">
+  <!-- Footer -->
+  <footer class="page-footer darken-4">
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left py-5">
+      <h5 class="font-weight-bold text-uppercase mt-3 mb-2">StLagrange</h5>
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+          <!-- Links -->
+          <h5 class="font-weight-bold mt-3 mb-2">Integrations</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">StLagrange API</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none" />
+
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+          <!-- Links -->
+          <h5 class="font-weight-bold mt-3 mb-2">Discover</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Products</a>
+            </li>
+            <li>
+              <a href="#!">Brands</a>
+            </li>
+            <li>
+              <a href="#!">Pricing</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none" />
+
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+          <!-- Links -->
+          <h5 class="font-weight-bold mt-3 mb-2">Start Selling</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Make your own Shirt</a>
+            </li>
+            <li>
+              <a href="#!">Free T-shirt Designs</a>
+            </li>
+            <li>
+              <a href="#!">Custom Products</a>
+            </li>
+            <li>
+              <a href="#!">Custom All Over Print T-shirts, Sweatshirts & More</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none" />
+
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+          <!-- Links -->
+          <h5 class="font-weight-bold mt-3 mb-2">StLagrange</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!">Print on Demand</a>
+            </li>
+            <li>
+              <a href="#!">About</a>
+            </li>
+            <li>
+              <a href="#!">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 text-white">
+      <div class="footerFeatures">
+        <p>Intellectual Property Policy</p>
+        <p>Terms of Service</p>
+        <p>Privacy Policy</p>
+      </div>
+      <p>© {{ currentYear }} StLagrange, Inc. All rights reserved</p>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 </div>

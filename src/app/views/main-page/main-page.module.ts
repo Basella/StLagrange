@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { appRoutesLazyLoad } from './lazy-load.route';
-import { ShareModule } from '../../share-module/share.module';
+import { ShareModule } from 'src/app/share-module/share.module';
 
 @NgModule({
   declarations: [MainPageComponent],
