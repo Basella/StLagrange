@@ -6,7 +6,6 @@ export const appRoutesLazyLoad: Routes = [
     path: '',
     component: MainPageComponent,
     children: [
-      { path: '', component: LandingComponent },
       { path: 'home', component: LandingComponent },
       {
         path: '',
@@ -16,7 +15,7 @@ export const appRoutesLazyLoad: Routes = [
           )
       },
       {
-        path: 'catalog',
+        path: '',
         loadChildren: () =>
           import('../catalog/catalog.module').then(
             (m) => m.CatalogModule

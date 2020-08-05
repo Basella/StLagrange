@@ -1,0 +1,160 @@
+<div class="allMain">
+  <div>
+    <div class="sidebar-fixed position-fixed">
+      <div class="list-group padding-zero list-group-flush">
+        <a (click)="isAllProdClicked()" routerLink="/catalog/products" routerLinkActive="active" class="list-group-item list-group-item-action waves-effect">
+          <mdb-icon fas icon="home" class="margin-right"></mdb-icon><span class="hide-span"> All Products</span>
+        </a>
+        <div class="divider"></div>
+        <a (click)="isMenClicked()" routerLink="/user/user-list" routerLinkActive="active"
+          class="list-group-item list-group-item-action waves-effect">
+          <mdb-icon fas icon="user" class="margin-right"></mdb-icon><span class="hide-span"> Men's Clothing</span>
+        </a>
+        <div class="divider"></div>
+        <a (click)="isWomenClicked()" routerLink="/categories" routerLinkActive="active"
+          class="list-group-item list-group-item-action waves-effect">
+          <mdb-icon fas icon="layer-group" class="margin-right"></mdb-icon><span class="hide-span"> Women's Clothing</span>
+        </a>
+        <div class="divider"></div>
+        <a  routerLink="/admin-sideattraction" routerLinkActive="active"
+          class="list-group-item list-group-item-action waves-effect">
+          <mdb-icon fas icon="check-circle" class="margin-right"></mdb-icon><span class="hide-span"> Best Sellers</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="bdyProd">
+      <div>
+        <div class="srch">
+          <form class="form-inline md-form form-sm">
+            <div class="srchDiv">
+              <div class="srchh">
+                <mdb-icon fas icon="search" aria-hidden="true" class="srchIcon"></mdb-icon>
+                <input class="form-control form-control-sm ml-3 srchInp" type="text" placeholder="Search for products, categories and new arrivals" aria-label="Search"
+                  mdbInput>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="prodBody">
+          <div class="menn">
+            <div class="menTitle">
+              <h2>
+                Men's Clothing
+              </h2>
+            </div>
+
+            <div class="menClothBody">
+              <div>
+                <div class="tshirtTitle">
+                  <h3>
+                    T-shirts
+                  </h3>
+                </div>
+
+                <!-- <div>
+                  <div class="row">
+                    <div  *ngFor="let imagee of images">
+                      <div>
+                        <img class="imgg" src={{imagee}}>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+                <div>
+                  <div class="row">
+                    <div *ngFor="let imagee of images">
+                      <div class="ImgnW">
+                        <img src={{imagee.imageSrc}} class="menTImg">
+                        <div class="imgWr">
+                          <p>{{imagee.description}}</p>
+                          <p>{{imagee.price}}</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="hoodieTitle">
+                  <h3>
+                    Hoodies
+                  </h3>
+                </div>
+
+                <div>
+                  <div class="row">
+                    <div class="">
+                      <img>
+                      <div>
+
+                      </div>
+                    </div>
+
+                    <div class="">
+                      <img>
+                      <div>
+
+                      </div>
+                    </div>
+
+                    <div class="">
+                      <img>
+                      <div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="longsleeveTitle">
+                  <h3>
+                    Long-Sleeves
+                  </h3>
+                </div>
+
+                <div>
+                  <div class="row">
+                    <div class="">
+                      <img>
+                      <div>
+
+                      </div>
+                    </div>
+
+                    <div class="">
+                      <img>
+                      <div>
+
+                      </div>
+                    </div>
+
+                    <div class="">
+                      <img>
+                      <div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

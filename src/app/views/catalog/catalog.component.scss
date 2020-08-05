@@ -1,0 +1,24 @@
+.mainCat {
+  padding-top: 100px;
+  height: 100vh;
+}
+
+.minHdr {
+  background-color: silver;
+}
+
+.inforDiv {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.catBdy {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.catSide {
+  width: 50px;
+  border-right: 3px solid grey;
+}

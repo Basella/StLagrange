@@ -1,9 +1,19 @@
+.navDiv {
+  // margin-left: 20px;
+  // margin-right: 20px;
+}
+
+.navbarBrandDiv {
+  margin-left: 50px;
+}
+
 .brandNav {
   font-size: 35px;
 }
 
-mdb-navbar-brand {
-
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .infor {
@@ -13,6 +23,10 @@ mdb-navbar-brand {
 
 .inforWrite {
   margin-right: 30px;
+}
+
+.register {
+  margin-right: 50px;
 }
 
 .login-btn {

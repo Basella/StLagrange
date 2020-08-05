@@ -6,10 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./catalog.component.scss']
 })
 export class CatalogComponent implements OnInit {
-
+products: boolean;
+newArrivals: boolean;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  isProdClicked() {
+    this.products = true;
+    this.newArrivals = false;
+  }
+
+  isNewArrClicked() {
+    this.products = false;
+    this.newArrivals = true;
   }
 
 }

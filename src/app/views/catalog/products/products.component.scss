@@ -1,0 +1,78 @@
+.allMain {
+  padding-top: 200px;
+  // height: 100vh;
+  margin-left: 100px;
+}
+
+.bdyProd {
+  margin-left: 300px;
+}
+
+.srchDiv {
+  width: 80% !important;
+  background-color: #F7F7F7;
+  border: 2px solid #C4C7C8;
+  border-radius: 30px;
+}
+
+.srchh {
+  // padding: 2px;
+  font-size: 20px;
+}
+
+.srchIcon {
+  margin-left: 20px;
+}
+
+.srchInp {
+  padding-left: 10px;
+  width: 90% !important;
+  font-size: 18px;
+  // padding: 5px;
+}
+
+.md-form input[type="text"]:not(.browser-default) {
+  border-bottom: none;
+}
+
+.md-form input[type="text"]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.menTitle, .tshirtTitle, .hoodieTitle, .longsleeveTitle {
+  margin-bottom: 30px;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: -8px; /* Adjustment for the gutter */
+  width: 100%;
+}
+
+.columnn {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.imgg {
+  flex: auto;
+  height: 250px;
+  min-width: 150px;
+  margin: 0 32px 32px 0; /* Some gutter */
+}
+
+.ImgnW {
+  margin-bottom: 60px;
+}
+
+.menTImg {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+}
+
+.imgWr {
+  margin-left: 40px;
+}

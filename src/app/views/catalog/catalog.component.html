@@ -1,1 +1,22 @@
-<p>catalog works!</p>
+<div class="mainCat">
+  <div>
+    <div class="minHdr">
+      <div class="inforDiv">
+          <p class="inforWrite" routerLink="/catalog/products"><a>Products</a></p>
+          <p class="" routerLink="/catalog/newArrivals"><a>New Arrivals</a></p>
+      </div>
+
+    </div>
+
+    <div class="catBdy">
+      <div class="page-bg pad4">
+        <router-outlet></router-outlet>
+      </div>
+
+    </div>
+
+    <!-- <div *ngIf="newArrivals">
+
+    </div> -->
+  </div>
+</div>
