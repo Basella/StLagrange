@@ -2,21 +2,28 @@
   <div>
     <div class="minHdr">
       <div class="inforDiv">
-          <p class="inforWrite" routerLink="/catalog/products"><a>Products</a></p>
-          <p class="" routerLink="/catalog/newArrivals"><a>New Arrivals</a></p>
-      </div>
+        <div id="ulDiv">
+          <ul class="mainInfo">
+            <li class="active">
+              <p class="infoo" (click)="isProdClicked()"><a data-toggle="tab">Products</a></p>
+            </li>
+            <li class="inforWrite">
+              <p class="infooo" (click)="isNewArrClicked()"><a data-toggle="tab">New Arrivals</a></p>
+            </li>
+          </ul>
 
+        </div>
+
+      </div>
     </div>
 
-    <div class="catBdy">
-      <div class="page-bg pad4">
-        <router-outlet></router-outlet>
-      </div>
-
+    <div class="" *ngIf="products">
+      <app-products></app-products>
     </div>
 
-    <!-- <div *ngIf="newArrivals">
+    <div class="" *ngIf="newArrivals">
+      <app-new-arrivals></app-new-arrivals>
+    </div>
 
-    </div> -->
   </div>
 </div>

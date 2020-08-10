@@ -1,3 +1,64 @@
 <div class="newDiv">
-  <p>Hi</p>
+  <div class="arrTxt">
+    <h1 class="new">New Arrivals</h1>
+  </div>
+
+  <div class="newBody">
+    <!-- t-shirts -->
+    <div>
+      <div>
+        <div class="row">
+          <div *ngFor="let imagee of images">
+            <div class="ImgnW">
+              <div class="zoom imgOnly">
+                <img src={{imagee.imageSrc}} class="img-fluid menTImg">
+              </div>
+              <div class="imgWr">
+                <p class="infoImg">{{imagee.description}}</p>
+                <p>{{imagee.price}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- hoodies -->
+    <div>
+      <div>
+        <div class="row">
+          <div *ngFor="let imagee of hoodies">
+            <div class="ImgnW">
+              <div class="zoom imgOnly">
+                <img src={{imagee.imageSrc}} class="img-fluid menTImg">
+              </div>
+              <div class="imgWr">
+                <p class="infoImg">{{imagee.description}}</p>
+                <p>{{imagee.price}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- long-sleeves -->
+    <div>
+      <div>
+        <div class="row">
+          <div *ngFor="let imagee of longSleeves">
+            <div class="ImgnW">
+              <div class="zoom imgOnly">
+                <img src={{imagee.imageSrc}} class="img-fluid menTImg">
+              </div>
+              <div class="imgWr">
+                <p class="infoImg">{{imagee.description}}</p>
+                <p>{{imagee.price}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

@@ -10,14 +10,18 @@ export class ProductsComponent implements OnInit {
   men: boolean;
   women: boolean;
   images: any[] = [];
+  hoodies: any[] = [];
+  longSleeves: any[] = [];
 
   constructor() { }
 
   ngOnInit(): void {
-    this.loadImages();
+    this.loadTshirts();
+    this.loadHoodies();
+    this.loadLongSleeves();
   }
 
-  loadImages() {
+  loadTshirts() {
     this.images = [
       {
         imageSrc: '../../../../assets/Images/menCottonCrewTee.webp',
@@ -47,6 +51,76 @@ export class ProductsComponent implements OnInit {
       {
         imageSrc: '../../../../assets/Images/unisexUltraCottonTee.webp',
         description: 'Unisex Ultra Cotton Tee',
+        price: 'From N2000'
+      }
+    ];
+  }
+
+  loadHoodies() {
+    this.hoodies = [
+      {
+        imageSrc: '../../../../assets/Images/unisexHeavyBlendH.webp',
+        description: 'Unisex Heavy Blend Full Zip',
+        price: 'From N2000'
+      },
+      {
+        imageSrc: '../../../../assets/Images/unisexHeavyBlendHoodie.webp',
+        description: 'Unisex Heavy Blend Hooded',
+        price: 'From N2000'
+      },
+      {
+        imageSrc: '../../../../assets/Images/unisexFullZip.webp',
+        description: 'Unisex Full Zipp Hoodie',
+        price: 'From N2000'
+      },
+      {
+        imageSrc: '../../../../assets/Images/unisexCollegeHoodie.webp',
+        description: 'Unisex College Hoodie',
+        price: 'From N2000'
+      },
+      {
+        imageSrc: '../../../../assets/Images/menNublend.webp',
+        description: 'Men\'s NuBLEND Hooded',
+        price: 'From N2000'
+      },
+      {
+        imageSrc: '../../../../assets/Images/unisexZipUp.webp',
+        description: 'Unisex Zip Up Hoodie',
+        price: 'From N2000'
+      }
+    ];
+  }
+
+  loadLongSleeves() {
+    this.longSleeves = [
+      {
+        imageSrc: '../../../../assets/Images/unisexHeavyBlendH.webp',
+        description: 'Unisex Heavy Blend Full Zip',
+        price: 'From N2000'
+      },
+      {
+        imageSrc: '../../../../assets/Images/unisexHeavyBlendHoodie.webp',
+        description: 'Unisex Heavy Blend Hooded',
+        price: 'From N2000'
+      },
+      {
+        imageSrc: '../../../../assets/Images/unisexFullZip.webp',
+        description: 'Unisex Full Zipp Hoodie',
+        price: 'From N2000'
+      },
+      {
+        imageSrc: '../../../../assets/Images/unisexCollegeHoodie.webp',
+        description: 'Unisex College Hoodie',
+        price: 'From N2000'
+      },
+      {
+        imageSrc: '../../../../assets/Images/menNublend.webp',
+        description: 'Men\'s NuBLEND Hooded',
+        price: 'From N2000'
+      },
+      {
+        imageSrc: '../../../../assets/Images/unisexZipUp.webp',
+        description: 'Unisex Zip Up Hoodie',
         price: 'From N2000'
       }
     ];

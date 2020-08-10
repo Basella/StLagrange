@@ -1,12 +1,12 @@
 .mainBody {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 170px;
+  // margin-right: 100px;
 }
 
 .mainDiv {
   display: flex;
   justify-content: space-between;
-  padding-top: 150px;
+  padding-top: 120px;
 }
 
 .mainDiv, .secondDiv, .thirdDiv, .fourthDiv {
@@ -28,7 +28,7 @@
 }
 
 .create {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: bold;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .simple {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -55,6 +55,8 @@
   padding-right: 40px;
   padding-top: 15px;
   padding-bottom: 15px;
+  outline: none;
+  border-style: none;
 }
 
 .features {
@@ -62,6 +64,7 @@
   justify-content: space-between;
   width: 43%;
   font-size: 14px;
+  margin-top: 7px;
 }
 
 .mainImg {

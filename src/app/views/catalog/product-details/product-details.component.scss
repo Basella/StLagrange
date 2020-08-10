@@ -1,0 +1,167 @@
+.prodDetails {
+  margin-top: 104px;
+}
+
+.detailsActual {
+  width: 100%;
+}
+
+.detailsImgg {
+  display: flex;
+}
+
+.detailsImgDesc {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.sideImgBlock {
+  height: 600px;
+}
+
+.sideImggM {
+  padding-left: 69px;
+}
+
+.sideImgg {
+  padding-top: 165px;
+}
+
+.slides {
+
+}
+
+.slide {
+  list-style: none;
+  padding: 5px;
+}
+
+.slideImg {
+  height: 62px;
+}
+
+.imgMain {
+  margin-left: 10px;
+  width: 543px;
+}
+
+.imgBgDiv{
+  width: 100%;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.imgBg {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../../assets/Images/menCottonCrewTee.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+.mainImgg {
+
+}
+
+.detailsDesc {
+  margin-left: 10.5%;
+  margin-top: 7.5%;
+}
+
+.detailList {
+  line-height: 2;
+  padding-left: 20px;
+}
+
+.detailsTxt {
+  background-color: #F7F7F7;
+}
+
+.about, .keyFeat, .careIns, .sizeGuide {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sizeGuide {
+  padding-bottom: 20px;
+}
+
+.detailsTxtt {
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  padding-left: 9%;
+}
+
+.aboutHd, .keyHd, .careHd, .sizeHd {
+  width: 35%;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.aboutTxt, .keyTxt, .careTxt {
+  width: 74%;
+}
+
+.sizeTxt {
+  width: 68%;
+}
+
+.suggestions {
+  margin-bottom: 100px;
+}
+
+.suggMain {
+  padding: 5% 5% 5% 9%;
+}
+
+.suggTxt {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: -8px; /* Adjustment for the gutter */
+  width: 100%;
+}
+
+.ImgnW {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.ImgnW:hover {
+  background-color: #F7F7F7;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.imgOnly {
+  width: 90%;
+  height: 230px;
+  background-color: #f7f7f7;
+  overflow: hidden;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.menTImg {
+  height: 100%;
+  padding: 0px 20px 0px 20px;
+}
+
+.imgWr {
+  padding: 10px;
+}
+
+.infoImg {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,13 +1,19 @@
+import { SizeGuide } from './sizeGuide';
+import { CareInstructions } from './careInstructions';
+import { KeyFeatures } from './keyFeatures';
+import { About } from './about';
 import { ObjectState } from './objectState';
 import { Type } from 'class-transformer';
-import { ProductDetails } from './productDetails';
 
-export class Product {
-  private imageSrc: string;
-  private description: string;
-  private price!: string;
-  @Type(() => ProductDetails)
-  private productDetails: ProductDetails[] = [];
+export class ProductDetails {
+  @Type(() => About)
+  private about: About;
+  @Type(() => KeyFeatures)
+  private keyFeatures: KeyFeatures;
+  @Type(() => CareInstructions)
+  private careInstructions: CareInstructions;
+  @Type(() => SizeGuide)
+  private sizeGuide: SizeGuide;
    objectState = ObjectState.Unchanged;
   // tslint:disable-next-line:no-inferrable-types
   private visibility: boolean = true;
@@ -19,41 +25,38 @@ export class Product {
   private updatedAt: Date = new Date();
 
 
-  public get ImageSrc(): string {
-    return this.imageSrc;
+  public get About(): About {
+    return this.about;
   }
-  public set ImageSrc(value: string) {
-    this.imageSrc = value;
+  public set About(value: About) {
+    this.about = value;
     if (this.objectState === ObjectState.Unchanged) {
       this.objectState = ObjectState.Changed;
     }
   }
-  public get Description(): string {
-    return this.description;
+  public get KeyFeatures(): KeyFeatures {
+    return this.keyFeatures;
   }
-  public set Description(value: string) {
-    this.description = value;
+  public set KeyFeatures(value: KeyFeatures) {
+    this.keyFeatures = value;
     if (this.objectState === ObjectState.Unchanged) {
       this.objectState = ObjectState.Changed;
     }
   }
-  public get Price(): string {
-    return this.price;
+  public get CareInstructions(): CareInstructions {
+    return this.careInstructions;
   }
-
-  public set Price(value: string) {
-    this.price = value;
+  public set CareInstructions(value: CareInstructions) {
+    this.careInstructions = value;
     if (this.objectState === ObjectState.Unchanged) {
       this.objectState = ObjectState.Changed;
     }
   }
-
-  public get ProductDetails(): ProductDetails[] {
-    return this.productDetails;
+  public get SizeGuide(): SizeGuide {
+    return this.sizeGuide;
   }
-
-  public set ProductDetails(value: ProductDetails[]) {
-    this.productDetails = value;
+  public set SizeGuide(value: SizeGuide) {
+    this.sizeGuide = value;
     if (this.objectState === ObjectState.Unchanged) {
       this.objectState = ObjectState.Changed;
     }

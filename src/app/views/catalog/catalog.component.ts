@@ -11,6 +11,7 @@ newArrivals: boolean;
   constructor() { }
 
   ngOnInit(): void {
+    this.isProdClicked();
   }
 
   isProdClicked() {

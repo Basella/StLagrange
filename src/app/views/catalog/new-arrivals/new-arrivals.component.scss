@@ -1,5 +1,56 @@
 .newDiv {
-  padding-top: 200px;
-  height: 100vh;
-  margin-left: 200px;
+  margin-left: 120px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.arrTxt {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.new {
+  font-weight: bold;
+  padding: 2px;
+}
+
+.newBody {
+  margin-left: 20px;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: -8px; /* Adjustment for the gutter */
+  width: 100%;
+}
+
+.ImgnW {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.ImgnW:hover {
+  background-color: #F7F7F7;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.imgOnly {
+  width: 100%;
+  height: 230px;
+  background-color: #f7f7f7;
+  overflow: hidden;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.menTImg {
+  height: 100%;
+  padding: 0px 20px 0px 20px;
+}
+
+.infoImg {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

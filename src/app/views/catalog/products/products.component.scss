@@ -1,23 +1,44 @@
 .allMain {
-  padding-top: 200px;
-  // height: 100vh;
-  margin-left: 100px;
+  margin-left: 90px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.allMin {
+  display: flex;
+}
+
+.sidebar {
+  width: 40%;
+  padding: 20px 40px 20px 40px;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.items.active {
+  border-left: 2px solid rgb(95, 16, 16);
+  background-color: white;
+}
+
+.sideTxt {
+  padding: 10px 10px 10px 0px;
+  font-size: 17px;
 }
 
 .bdyProd {
-  margin-left: 300px;
+  margin-left: 10px;
 }
 
 .srchDiv {
-  width: 80% !important;
+  width: 90% !important;
   background-color: #F7F7F7;
-  border: 2px solid #C4C7C8;
+  border: 1px solid #C4C7C8;
   border-radius: 30px;
 }
 
 .srchh {
-  // padding: 2px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .srchIcon {
@@ -27,8 +48,7 @@
 .srchInp {
   padding-left: 10px;
   width: 90% !important;
-  font-size: 18px;
-  // padding: 5px;
+  font-size: 17px;
 }
 
 .md-form input[type="text"]:not(.browser-default) {
@@ -51,11 +71,6 @@
   width: 100%;
 }
 
-.columnn {
-  flex: 50%;
-  padding: 0 4px;
-}
-
 .imgg {
   flex: auto;
   height: 250px;
@@ -64,15 +79,37 @@
 }
 
 .ImgnW {
-  margin-bottom: 60px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.ImgnW:hover {
+  background-color: #F7F7F7;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.imgOnly {
+  width: 100%;
+  height: 230px;
+  background-color: #f7f7f7;
+  overflow: hidden;
+  margin-bottom: 16px;
+  position: relative;
 }
 
 .menTImg {
-  width: 300px;
-  height: 300px;
-  padding: 20px;
+  height: 100%;
+  padding: 0px 20px 0px 20px;
 }
 
 .imgWr {
-  margin-left: 40px;
+  padding: 10px;
+}
+
+.infoImg {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

@@ -1,14 +1,19 @@
 .navDiv {
-  // margin-left: 20px;
-  // margin-right: 20px;
+  background-color: white;
+}
+
+.navbar-brand {
+  width: 35px;
+  height: 45px;
 }
 
 .navbarBrandDiv {
-  margin-left: 50px;
+  font-size: 25px;
+  margin-left: 30px;
 }
 
 .brandNav {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 a {
@@ -17,8 +22,9 @@ a {
 }
 
 .infor {
-  padding-left: 10px;
-  font-size: 20px;
+  padding-top: 5px;
+  padding-left: 110px;
+  font-size: 15px;
 }
 
 .inforWrite {
@@ -38,11 +44,19 @@ a {
   margin-left: 10px;
 }
 
+.loginn {
+  background-color: white;
+  border: 1px solid #C2C2C2;
+}
+
 button {
-  border-radius: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  border-radius: 30px;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  font-size: 12px;
   font-weight: bold;
+  outline: none;
+  border-style: none;
 }
 
 .page-footer {

@@ -1,24 +1,24 @@
 <div class="allMain">
-  <div>
-    <div class="sidebar-fixed position-fixed">
+  <div class="allMin">
+    <div class="sidebar">
       <div class="list-group padding-zero list-group-flush">
-        <a (click)="isAllProdClicked()" routerLink="/catalog/products" routerLinkActive="active" class="list-group-item list-group-item-action waves-effect">
-          <mdb-icon fas icon="home" class="margin-right"></mdb-icon><span class="hide-span"> All Products</span>
+        <a (click)="isAllProdClicked()" routerLinkActive="active" class="list-group-item list-group-item-action waves-effect items active" data-toggle="tab">
+          <span class="hide-span sideTxt"> All Products</span>
         </a>
-        <div class="divider"></div>
-        <a (click)="isMenClicked()" routerLink="/user/user-list" routerLinkActive="active"
-          class="list-group-item list-group-item-action waves-effect">
-          <mdb-icon fas icon="user" class="margin-right"></mdb-icon><span class="hide-span"> Men's Clothing</span>
+        <!-- <div class="divider"></div> -->
+        <a (click)="isMenClicked()" routerLinkActive="active"
+          class="list-group-item list-group-item-action waves-effect items" data-toggle="tab">
+          <span class="hide-span sideTxt"> Men's Clothing</span>
         </a>
-        <div class="divider"></div>
-        <a (click)="isWomenClicked()" routerLink="/categories" routerLinkActive="active"
-          class="list-group-item list-group-item-action waves-effect">
-          <mdb-icon fas icon="layer-group" class="margin-right"></mdb-icon><span class="hide-span"> Women's Clothing</span>
+        <!-- <div class="divider"></div> -->
+        <a (click)="isWomenClicked()" routerLinkActive="active"
+          class="list-group-item list-group-item-action waves-effect items" data-toggle="tab">
+          <span class="hide-span sideTxt"> Women's Clothing</span>
         </a>
-        <div class="divider"></div>
-        <a  routerLink="/admin-sideattraction" routerLinkActive="active"
-          class="list-group-item list-group-item-action waves-effect">
-          <mdb-icon fas icon="check-circle" class="margin-right"></mdb-icon><span class="hide-span"> Best Sellers</span>
+        <!-- <div class="divider"></div> -->
+        <a  routerLinkActive="active"
+          class="list-group-item list-group-item-action waves-effect items" data-toggle="tab">
+          <span class="hide-span sideTxt"> Best Sellers</span>
         </a>
       </div>
     </div>
@@ -46,6 +46,7 @@
             </div>
 
             <div class="menClothBody">
+              <!-- t-shirts -->
               <div>
                 <div class="tshirtTitle">
                   <h3>
@@ -53,33 +54,24 @@
                   </h3>
                 </div>
 
-                <!-- <div>
-                  <div class="row">
-                    <div  *ngFor="let imagee of images">
-                      <div>
-                        <img class="imgg" src={{imagee}}>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
-
                 <div>
                   <div class="row">
                     <div *ngFor="let imagee of images">
-                      <div class="ImgnW">
-                        <img src={{imagee.imageSrc}} class="menTImg">
+                      <div routerLink="productDetails" class="ImgnW">
+                        <div class="zoom imgOnly">
+                          <img src={{imagee.imageSrc}} class="img-fluid menTImg">
+                        </div>
                         <div class="imgWr">
-                          <p>{{imagee.description}}</p>
+                          <p class="infoImg">{{imagee.description}}</p>
                           <p>{{imagee.price}}</p>
                         </div>
                       </div>
                     </div>
-
-
                   </div>
                 </div>
               </div>
 
+              <!-- hoodies -->
               <div>
                 <div class="hoodieTitle">
                   <h3>
@@ -89,31 +81,22 @@
 
                 <div>
                   <div class="row">
-                    <div class="">
-                      <img>
-                      <div>
-
+                    <div *ngFor="let imagee of hoodies">
+                      <div class="ImgnW">
+                        <div class="zoom imgOnly">
+                          <img src={{imagee.imageSrc}} class="img-fluid menTImg">
+                        </div>
+                        <div class="imgWr">
+                          <p class="infoImg">{{imagee.description}}</p>
+                          <p>{{imagee.price}}</p>
+                        </div>
                       </div>
                     </div>
-
-                    <div class="">
-                      <img>
-                      <div>
-
-                      </div>
-                    </div>
-
-                    <div class="">
-                      <img>
-                      <div>
-
-                      </div>
-                    </div>
-
                   </div>
                 </div>
               </div>
 
+              <!-- long-sleeves -->
               <div>
                 <div class="longsleeveTitle">
                   <h3>
@@ -123,31 +106,20 @@
 
                 <div>
                   <div class="row">
-                    <div class="">
-                      <img>
-                      <div>
-
+                    <div *ngFor="let imagee of longSleeves">
+                      <div class="ImgnW">
+                        <div class="zoom imgOnly">
+                          <img src={{imagee.imageSrc}} class="img-fluid menTImg">
+                        </div>
+                        <div class="imgWr">
+                          <p class="infoImg">{{imagee.description}}</p>
+                          <p>{{imagee.price}}</p>
+                        </div>
                       </div>
                     </div>
-
-                    <div class="">
-                      <img>
-                      <div>
-
-                      </div>
-                    </div>
-
-                    <div class="">
-                      <img>
-                      <div>
-
-                      </div>
-                    </div>
-
                   </div>
                 </div>
               </div>
-
             </div>
 
 

@@ -1,0 +1,174 @@
+<div class="prodDetails">
+  <!-- <div class="detailsContent"> -->
+    <div class="detailsActual">
+
+      <div class="detailsImgDesc">
+        <div class="detailsImgg">
+          <div class="sideImgBlock">
+            <div class="sideImggM">
+              <div class="sideImgg">
+                <ul class="slides">
+                  <li class="slide active">
+                    <img src="../../../../assets/Images/menCottonCrewTee.webp" draggable="false" class="slideImg">
+                  </li>
+                  <li class="slide">
+                    <img src="../../../../assets/Images/menCottonCrewTee.webp" draggable="false" class="slideImg">
+                  </li>
+                  <li class="slide">
+                    <img src="../../../../assets/Images/menCottonCrewTee.webp" draggable="false" class="slideImg">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="imgMain">
+            <div class="imgBgDiv">
+              <div class="imgBg">
+                <!-- <img src="../../../../assets/Images/menCottonCrewTee.webp" draggable="false" class="mainImgg"> -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="detailsDesc">
+          <div>
+            <p>T-Shirt</p>
+            <h1>Men's Cotton Crew Tee</h1>
+            <div>
+              <ul class="detailList">
+                <li>
+                  Premium fit
+                </li>
+                <li>
+                  100% Soft cotton (fiber content may vary for different colors)
+                </li>
+                <li>
+                  Light fabric (4.3 oz/yd² (146 g/m²))
+                </li>
+                <li>
+                  Tear away label
+                </li>
+                <li>
+                  Runs bigger than usual
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="detailsTxt">
+        <div class="detailsTxtMin">
+          <div class="detailsTxtt">
+            <div class="about">
+              <div class="aboutHd">
+                <p>About</p>
+              </div>
+              <div class="aboutTxt">
+                <p>Hello About,  Hello About, Hello About, Hello About, Hello About</p>
+                <p>Hello About, Hello About, Hello About, Hello About, Hello About</p>
+                <p>Hello About, Hello About, Hello About, Hello About, Hello About</p>
+              </div>
+            </div>
+            <hr>
+            <div class="keyFeat">
+              <div class="keyHd">
+                <p>Key Features</p>
+              </div>
+              <div class="keyTxt">
+                <p>Hello Key Features, Hello Key Features, Hello Key Features</p>
+                <p>Hello Key Features, Hello Key Features, Hello Key Features</p>
+                <p>Hello Key Features, Hello Key Features, Hello Key Features</p>
+              </div>
+            </div>
+            <hr>
+            <div class="careIns">
+              <div class="careHd">
+                <p>Care Instructions</p>
+              </div>
+              <div class="careTxt">
+                <p>Hello Care Instructions, Hello Care Instructions, Hello Care Instructions</p>
+                <p>Hello Care Instructions, Hello Care Instructions, Hello Care Instructions</p>
+                <p>Hello Care Instructions, Hello Care Instructions, Hello Care Instructions</p>
+              </div>
+            </div>
+            <hr>
+            <div class="sizeGuide">
+              <div class="sizeHd">
+                <p>Size Guide</p>
+              </div>
+              <div class="sizeTxt">
+                <div>
+                  <p>Hello Size Guide</p>
+                </div>
+                <div class="table-wrapper table-responsive w-auto">
+                  <!--Table-->
+                  <table class="mb-0 tableDiv" mdbTable hover="true">
+                    <!--Table head-->
+                    <thead>
+                      <tr>
+                        <th scope="col" class="tableFont">XS</th>
+                        <th scope="col" class="tableFont">S</th>
+                        <th scope="col" class="tableFont">M</th>
+                        <th scope="col" class="numberofSeats">L</th>
+                        <th scope="col" class="lastColumn">XL</th>
+                        <th scope="col" class="lastColumn">2XL</th>
+                        <th scope="col" class="lastColumn">3XL</th>
+                        <th scope="col" class="lastColumn">4XL</th>
+                      </tr>
+                    </thead>
+                  <!--Table head-->
+                    <!--Table body-->
+                    <tbody>
+                    <tr *ngFor="let description of descriptions">
+                      <th scope="row" class="th-lg tableIDFont" data-category="reservationNumberFilterValue">Size</th>
+                      <td class="th-lg tableFont">Size</td>
+                      <td class="th-lg tableFont">Size</td>
+                      <td class="th-lg numberofSeats">Size</td>
+                      <td class="th-lg lastColumn">Size</td>
+                      <td class="th-lg lastColumn">Size</td>
+                      <td class="th-lg lastColumn">Size</td>
+                      <td class="th-lg lastColumn">Size</td>
+                    </tr>
+                    </tbody>
+                    <!--Table body-->
+                  </table>
+                  <!--Table-->
+                </div>
+              </div>
+
+            </div>
+            <hr>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="suggestions">
+        <div class="suggMain">
+          <div class="suggTxt">
+            <p>You may also like</p>
+          </div>
+
+          <div>
+            <div class="row">
+              <div *ngFor="let imagee of images">
+                <div routerLink="productDetails" class="ImgnW">
+                  <div class="zoom imgOnly">
+                    <img src={{imagee.imageSrc}} class="img-fluid menTImg">
+                  </div>
+                  <div class="imgWr">
+                    <p class="infoImg">{{imagee.description}}</p>
+                    <p>{{imagee.price}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+</div>

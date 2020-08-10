@@ -1,36 +1,39 @@
 <div>
-  <mdb-navbar SideClass="navbar navbar-expand-lg py-3 darken-4 fixed-top fixed-margin-btm" [containerInside]="false"class="navDiv">
-    <!-- Navbar brand -->
-    <mdb-navbar-brand class="navbarBrandDiv">
-      <img src="../../../assets/Images/stlagrange_logo.jpg" class="navbar-brand">
-      <a class="navbar-brand brandNav" [routerLink]="'/'">StLagrange</a>
-    </mdb-navbar-brand>
+  <div>
+    <mdb-navbar SideClass="navbar navbar-expand-lg darken-4 fixed-top fixed-margin-btm bg-white" class="navDiv">
+      <!-- Navbar brand -->
+      <mdb-navbar-brand class="navbarBrandDiv">
+        <img src="../../../assets/Images/stlagrange_logo.jpg" class="navbar-brand">
+        <a class="navbar-brand brandNav" [routerLink]="'/'">StLagrange</a>
+      </mdb-navbar-brand>
 
-    <links class="infor">
-      <ul class="navbar-nav inforUL">
-        <li class="nav-item inforWrite"><a [routerLink]="'/catalog'">Catalog</a></li>
-        <li class="nav-item inforWrite"><a>How it works</a></li>
-        <li class="nav-item"><a>Price</a></li>
-      </ul>
-    </links>
+      <links class="infor">
+        <ul class="navbar-nav inforUL">
+          <li class="nav-item inforWrite"><a [routerLink]="'/catalog'">Catalog</a></li>
+          <li class="nav-item inforWrite"><a>How it works</a></li>
+          <li class="nav-item"><a>Price</a></li>
+        </ul>
+      </links>
 
-    <links class="register">
-      <!-- Links -->
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item login-btn">
-          <button class="nav-link waves-light text-dark" mdbWavesEffect [routerLink]="'/login'">
-            Login
-          </button>
-        </li>
-        <li class="nav-item signup-link">
-          <button class="nav-link waves-light text-white signup-btn" mdbWavesEffect [routerLink]="'/signup'">
-            Signup
-          </button>
-        </li>
-      </ul>
-      <!-- Links -->
-    </links>
-  </mdb-navbar>
+      <links class="register">
+        <!-- Links -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item login-btn">
+            <button class="nav-link waves-light text-dark loginn" mdbWavesEffect [routerLink]="'/login'">
+              Login
+            </button>
+          </li>
+          <li class="nav-item signup-link">
+            <button class="nav-link waves-light text-white signup-btn" mdbWavesEffect [routerLink]="'/signup'">
+              Signup
+            </button>
+          </li>
+        </ul>
+        <!-- Links -->
+      </links>
+    </mdb-navbar>
+  </div>
+
 </div>
 
 <router-outlet></router-outlet>
