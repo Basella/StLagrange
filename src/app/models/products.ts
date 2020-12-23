@@ -3,7 +3,7 @@ import { Type } from 'class-transformer';
 import { ProductDetails } from './productDetails';
 
 export class Product {
-  private imageSrc: string;
+  private imageSrc: string[];
   private description: string;
   private price!: string;
   @Type(() => ProductDetails)
@@ -19,10 +19,10 @@ export class Product {
   private updatedAt: Date = new Date();
 
 
-  public get ImageSrc(): string {
+  public get ImageSrc(): string[] {
     return this.imageSrc;
   }
-  public set ImageSrc(value: string) {
+  public set ImageSrc(value: string[]) {
     this.imageSrc = value;
     if (this.objectState === ObjectState.Unchanged) {
       this.objectState = ObjectState.Changed;
